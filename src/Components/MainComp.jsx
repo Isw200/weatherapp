@@ -261,7 +261,7 @@ class MainComp extends Component {
             © 2022 Weathreo ® All rights reserved - A Project by Isuru
           </div>
           <div className="git">
-            <a href="https://github.com/Isw200/weathreo.git">
+            <a href="https://github.com/Isw200/weatherapp">
               <UilGithub />
               <p>GitHub</p>
             </a>
