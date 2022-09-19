@@ -1,0 +1,51 @@
+.fiveDaysFrodcast {
+  margin-top: 2em;
+  width: 25%;
+  color: #fff;
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig2.png);
+  background-size: cover;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 3em;
+}
+@media (max-width: 1700px) {
+  .fiveDaysFrodcast {
+    width: 24%;
+  }
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.cloudicon img {
+  width: 100%;
+}
+.cloudicon {
+  width: 12%;
+}
+.fiveDaysFrodcast .temperature {
+  display: flex;
+}
+.temperature p,
+.temperature span {
+  font-size: 2rem;
+}
+.fiveDaysFrodcast .dateAndMonth,
+.fiveDaysFrodcast .day {
+  margin-top: 0.7em;
+}
+@media (max-width: 615px) {
+  .fiveDaysFrodcast {
+    width: 100%;
+    padding: 0;
+    margin: 1em auto;
+  }
+  .fiveDaysFrodcastBody {
+    width: 100%;
+  }
+  .fiveDaysBody {
+    padding: 1em;
+  }
+}

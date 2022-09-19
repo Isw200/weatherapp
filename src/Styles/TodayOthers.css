@@ -1,0 +1,303 @@
+.others {
+  width: 66%;
+  border-radius: 30px;
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig2.png);
+  background-size: cover;
+  color: #fff;
+  padding: 1em;
+}
+@media (max-width: 1700px) {
+  .others {
+    width: 65%;
+  }
+}
+@media (max-width: 615px) {
+  .others {
+    width: 100%;
+    margin-top: 1em;
+    padding: 0;
+  }
+  .othersBody {
+    padding: 1em;
+  }
+}
+.others h3 {
+  width: 97%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.bigBox {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 615px) {
+  .bigBox {
+    width: 100%;
+  }
+}
+.temp,
+.wind,
+.sun {
+  width: 29%;
+  height: 15em;
+  border-radius: 30px;
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig.png);
+  padding: 1em;
+  background-size: 0%;
+  box-shadow: 0 0 30px rgba(110, 110, 110, 0.256);
+  /* opacity: 0.75; */
+}
+@media (max-width: 1400px) {
+  .temp,
+  .wind,
+  .sun {
+    width: 27%;
+  }
+}
+/* ----- temp ---- */
+
+.chart {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  height: 5em;
+  justify-content: space-between;
+}
+
+.chart .bar {
+  border-radius: 50px;
+  margin-top: 5em;
+  transform: translateY(-100%);
+  flex-direction: column;
+  width: 5px;
+  background-color: rgb(130, 130, 130);
+}
+.chart .bar:nth-child(10) {
+  background-color: rgb(0, 155, 252);
+}
+.chart .bar:nth-child(9) {
+  background-color: rgba(0, 155, 252, 0.546);
+}
+.chart .bar:nth-child(8) {
+  background-color: rgba(0, 155, 252, 0.273);
+}
+.chart .bar:nth-child(11) {
+  background-color: rgba(0, 155, 252, 0.546);
+}
+.chart .bar:nth-child(12) {
+  background-color: rgba(0, 155, 252, 0.273);
+}
+.curentTemp {
+  width: 95%;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.tempNow p {
+  font-weight: 600;
+}
+.tempNow .tempValue {
+  display: inline-flex;
+  margin-top: 0.2em;
+  font-size: 2.5rem;
+}
+@media (max-width: 1500px) {
+  .tempNow .tempValue {
+    font-size: 1.6rem;
+  }
+}
+.tempValue span {
+  font-weight: 200;
+}
+.minmaxtemp p {
+  margin-top: 1em;
+}
+/* ----- wind ----- */
+
+.windMeter {
+  margin: auto;
+  width: 14em;
+  height: 10em;
+}
+@media (max-width: 1400px) {
+  .windMeter {
+    width: 13em;
+  }
+}
+.windSpeed p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+/* ----- sun ----- */
+
+.sunMeter {
+  margin: auto;
+  width: 14em;
+  height: 11em;
+}
+@media (max-width: 1400px) {
+  .sunMeter {
+    width: 13em;
+  }
+}
+.sunMeter .riseAndSetTimes {
+  width: 110%;
+  position: relative;
+  top: -90px;
+  display: flex;
+  font-size: 1rem;
+  margin-left: -0.6em;
+  justify-content: space-between;
+}
+.sunMeter .riseAndSetIcons {
+  margin-left: -0.38em;
+  width: 106%;
+  position: relative;
+  top: -105px;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .sunMeter .riseAndSetTimes {
+    top: -70px;
+  }
+  .sunMeter .riseAndSetIcons {
+    top: -80px;
+  }
+}
+@media (max-width: 615px) {
+  .bigBox {
+    flex-direction: column;
+  }
+  .temp,
+  .wind,
+  .sun {
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5em;
+  }
+}
+/* ----- bottom part ----- */
+.smallBox {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+}
+.feelslike,
+.humidity,
+.visibility {
+  width: 29%;
+  height: 3em;
+  border-radius: 20px;
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig.png);
+  padding: 1em;
+  background-size: 0%;
+  box-shadow: 0 0 30px rgba(110, 110, 110, 0.256);
+  padding-bottom: 2em;
+}
+@media (max-width: 1400px) {
+  .feelslike,
+  .humidity,
+  .visibility {
+    width: 27%;
+  }
+}
+.smallBox .flexBox {
+  width: 97%;
+  display: flex;
+  margin: auto;
+  margin-top: -0.3em;
+  justify-content: space-between;
+}
+.feelslike .box {
+  margin-bottom: -4em;
+  display: flex;
+}
+.feelslike .box {
+  font-size: 1.3rem;
+}
+.feelslike p {
+  width: 50%;
+  margin-top: -0.5em;
+}
+@media (max-width: 1550px) {
+  .feelslike .box p {
+    font-size: 1rem;
+  }
+  .humidity .flexBox .value {
+    font-size: 1rem;
+  }
+  .visibility .flexBox .value {
+    font-size: 1rem;
+  }
+  .humidity .flexBox .humDescription p {
+    font-size: 0.9rem;
+  }
+  .feelslike .flexBox p {
+    font-size: 0.9rem;
+  }
+  .visibility .visDescription {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1250px) {
+  .humidity .flexBox .value {
+    font-size: 0.8rem;
+  }
+  .visibility .flexBox .value {
+    font-size: 0.8rem;
+  }
+  .humidity .flexBox .humDescription p {
+    font-size: 0.7rem;
+  }
+  .feelslike .flexBox p {
+    font-size: 0.7rem;
+  }
+  .visibility .visDescription {
+    font-size: 0.7rem;
+  }
+}
+
+.humidity .flexBox .value {
+  font-size: 1.3rem;
+}
+.humidity .flexBox .humDescription {
+  width: 50%;
+  margin-top: -2em;
+}
+
+.visibility .flexBox .value {
+  font-size: 1.3rem;
+}
+.visibility .visDescription {
+  width: 50%;
+  margin-top: -2em;
+}
+
+@media (max-width: 615px) {
+  .smallBox {
+    flex-direction: column;
+  }
+  .feelslike,
+  .humidity,
+  .visibility {
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5em;
+  }
+  .humidity .flexBox .humDescription p {
+    font-size: 0.9rem;
+  }
+  .feelslike .flexBox p {
+    font-size: 0.9rem;
+  }
+  .visibility .visDescription {
+    font-size: 0.9rem;
+  }
+}

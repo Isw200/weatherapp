@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig.png);
+  background-size: cover;
+}
+.App {
+  width: 95%;
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,112 @@
+.topBox {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 615px) {
+  .topBox {
+    flex-direction: column;
+  }
+}
+.bottomBox {
+  display: flex;
+  justify-content: space-between;
+}
+.headerBox {
+  display: flex;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+.headerLogo {
+  width: 10%;
+}
+.headerLogo img {
+  width: 100%;
+}
+.aside {
+  display: flex;
+}
+.favePlaces {
+  color: rgb(174, 174, 174);
+  display: flex;
+  margin-bottom: 0.6em;
+  margin-right: 2em;
+}
+.place {
+  cursor: pointer;
+  vertical-align: baseline;
+  margin: auto 0.4em;
+  padding: 0.5em 2em;
+  background-color: #1d1d1d;
+  border-radius: 50px;
+}
+
+.place:hover {
+  background-color: rgb(117, 117, 117);
+  color: #000;
+}
+.place:active {
+  background-color: #414141;
+  color: rgb(174, 174, 174);
+}
+@media (max-width: 615px) {
+  .favePlaces {
+    display: none;
+  }
+
+  .headerBox {
+    margin: 1em 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  .headerLogo {
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+  }
+  .searchbox {
+    display: block;
+    margin: auto;
+  }
+
+  .bottomBox {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.footer {
+  margin-top: 1em;
+  color: rgb(113, 113, 113);
+  display: flex;
+  max-width: 35em;
+  margin: 1.2em auto 0 auto;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+.footer a {
+  color: rgb(113, 113, 113);
+  text-decoration: none;
+  display: flex;
+  margin: auto 0.1em;
+}
+.footer p {
+  margin: auto 0.4em;
+}
+.footer .copyright {
+  margin: auto 0;
+}
+
+@media (max-width: 615px) {
+  .footer {
+    margin-top: 2em;
+    flex-direction: column;
+    font-size: 0.6rem;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .footer .git {
+    margin-top: 0.5em;
+    text-align: center;
+    margin: auto;
+  }
+}

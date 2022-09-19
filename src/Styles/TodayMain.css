@@ -1,0 +1,79 @@
+.today {
+  width: 25%;
+  background-image: url(/Users/isuruariyarathna/Documents/WEB/React/weatherapp/public/bgbig2.png);
+  background-size: cover;
+  color: #fff;
+  border-radius: 30px;
+  padding: 3em 3em 2em 3em;
+}
+@media (max-width: 1700px) {
+  .today {
+    width: 24%;
+  }
+}
+@media (max-width: 615px) {
+  .today {
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+  }
+}
+.today h1 {
+  font-size: 3rem;
+}
+.today h1 span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.todayWeatherImage img {
+  width: 40%;
+  margin-top: 3%;
+  margin: auto;
+  display: block;
+}
+.location,
+.datetime {
+  display: flex;
+}
+.location {
+  padding: 1em 0;
+}
+.icon {
+  margin-right: 10px;
+  height: 1.3em;
+  display: block;
+}
+.location p,
+.datetime p {
+  font-size: 0.9rem;
+}
+.datetime p {
+  display: flex;
+}
+.datetime {
+  justify-content: space-between;
+}
+.cloud_details {
+  padding-bottom: 1em;
+}
+.today hr {
+  border: 1px solid rgba(138, 138, 138, 0.517);
+}
+.time {
+  margin-left: 15px;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: -0.7em;
+  margin-right: 1em;
+}
+
+@media (max-width: 615px) {
+  .today {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .todayBody {
+    padding: 1em;
+  }
+}
