@@ -16,8 +16,8 @@ class MainComp extends Component {
     super(props);
 
     this.state = {
-      lat: 51.509865,
-      lng: -0.118092,
+      lat: 6.874092,
+      lng: 79.860497,
       //current
       id: 0,
       city: "",
@@ -52,7 +52,7 @@ class MainComp extends Component {
     this.clickHandler = this.clickHandler.bind(this);
   }
 
-  //Default location --London,GB
+  //Default location --colombo
   componentDidMount() {
     this.callApi(this.state.lat, this.state.lng);
   }
